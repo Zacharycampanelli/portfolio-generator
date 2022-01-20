@@ -191,7 +191,7 @@ const mockData = {
 promptUser()
   .then(promptProject)
   .then(portfolioData => {
-    return generatePage(portfolioData);
+    return generatePage(mockData);
   })
   .then(pageHTML => {
     return writeFile(pageHTML);
