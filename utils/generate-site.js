@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { createPromptModule } = require('inquirer');
 
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
